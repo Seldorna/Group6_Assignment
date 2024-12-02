@@ -1,0 +1,174 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(57, 57, 187); /* Corrected property */
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: -1px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-right: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+}
+
+.navbar a:hover {
+    background-color: white; /* Background changes to white on hover */
+    color: blue; /* Text changes to blue on hover */
+}
+
+/* Styles for language options */
+.languages {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Additional content styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Top and Bottom Part Sections */
+.top-part, .bottom-part {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Headline and Fun Fact Section Styles */
+.headline, .fun-fact {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.headline {
+    position: relative; /* Add this to position the link over the image */
+}
+
+.headline img, .fun-fact img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.headline-link {
+    position: absolute;
+    bottom: 30px; /* Position it near the bottom */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.headline-link a {
+    color: white; /* White text color */
+    text-decoration: none;
+    font-size: 1.2em; /* Slightly larger text */
+}
+
+.headline-link a:hover {
+    color: blue; /* Change text color to blue on hover */
+}
+
+/* Additional Headline and Latest News */
+.latest-news, .featured {
+    flex: 1 1 45%;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.latest-news ul, .featured ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-news li, .featured li {
+    margin-bottom: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .top-part, .bottom-part {
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer h4 {
+    margin-top: 0;
+}
+
+footer p, footer ul {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .contact, footer .services, footer .network, footer .language-links, footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer .services ul, footer .network ul, footer .language-links ul, footer .social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .social-media ul li a {
+    display: flex;
+    align-items: center;
+}
+
+footer .social-media ul li a i {
+    margin-right: 5px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
